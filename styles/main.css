@@ -1,0 +1,42 @@
+/* This file contains the CSS styles for the responsive webpage. */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 150px; /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.addresses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .addresses {
+        flex-direction: row;
+    }
+}

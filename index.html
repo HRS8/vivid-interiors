@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>VIVID INTERIORS</title>
+    <!-- Add Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Add Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            background: #073648;
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            display: block;
+            margin: auto;
+            width: 640px;
+            max-width: 60vw;
+            height: auto;
+        }
+
+        .footer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+            padding: 1.5rem 0 1rem 0;
+            background: #073648;
+            color: #f8f6f6;
+        }
+
+        .address {
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 1.1em;
+            vertical-align: middle;
+            margin-right: 0.3em;
+            color: #0987f5;
+        }
+
+        .address-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 1em;
+        }
+
+        .address-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.7em;
+            margin-top: 0.2em;
+        }
+
+        .address-details {
+            text-align: left;
+        }
+
+        @media (min-width: 600px) {
+            .footer {
+                flex-direction: row;
+                gap: 3rem;
+            }
+
+            .address {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 599px) {
+            .footer {
+                flex-direction: column;
+                gap: 1.5rem;
+                font-size: 5px;
+            }
+
+            .address-row {
+                justify-content: center;
+                
+            }
+
+            .address-details {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="images/Picsart_25-05-11_20-58-35-716.png" alt="Logo" class="logo">
+        <footer class="footer">
+            <div class="address">
+                <div class="address-row">
+                    <div class="address-icons">
+                        <span class="material-icons icon">location_on</span>
+                        <span class="material-icons icon" style="margin-top:4em;">phone</span>
+                    </div>
+                    <div class="address-details">
+                        <div>
+                            <span style="font-weight: bolder;">HYDERABAD</span><br>
+                            604, Sri Balaji Gulmohar Township,<br>
+                            Kausalya Colony, Bachupally<br>
+                            Hyderabad, Telangana 500090<br>
+                            India
+                        </div>
+                        <div style="margin-top:0.5em;">
+                            +91 9959833456
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="address">
+                <div class="address-row">
+                    <div class="address-icons">
+                        <span class="material-icons icon">location_on</span>
+                        <span class="material-icons icon" style="margin-top:4em;">phone</span>
+                    </div>
+                    <div class="address-details">
+                        <div>
+                            <span style="font-weight: bolder;">VIJAYAWADA</span><br>
+                            403, DKR Green Fields-1 Apartment<br>
+                            Nidamanuru Road, Poranki<br>
+                            Vijayawada, Andhra Pradesh 521137<br>
+                            India
+                        </div>
+                        <div style="margin-top:0.5em;">
+                            +91 7019816343
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
